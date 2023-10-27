@@ -7,6 +7,8 @@
     "schedule:weekends"
   ],
   "prConcurrentLimit": 5,
+  "automergeType": "branch",
+  "automergeMajor": false,
   "customManagers": [
     {
       "customType": "regex",
