@@ -16,5 +16,21 @@
       ],
       "versioningTemplate": "{{#if versioning}}{{{versioning}}}{{else}}semver{{/if}}"
     }
+  ],
+  "packageRules": [
+    {
+      "matchManagers": ["gomod", "npm", "dockerfile"],
+      "labels": ["dependencies"]
+    },
+    {
+      "matchManagers": ["woodpecker"],
+      "labels": ["build"]
+    },
+    {
+      "groupName": "golang deps non-major",
+      "matchManagers": ["gomod"],
+      "matchUpdateTypes": ["minor", "patch"],
+      "extends": ["schedule:daily"]
+    }
   ]
 }
