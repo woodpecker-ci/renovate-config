@@ -31,6 +31,15 @@
       "matchManagers": ["gomod"],
       "matchUpdateTypes": ["minor", "patch"],
       "extends": ["schedule:daily"]
+    },
+    {
+      "enabled": true,
+      "matchDatasources": ["docker"],
+      "pinDigests": false
+    },
+    {
+      "matchDepTypes": ["action"],
+      "pinDigests": false
     }
   ]
 }
