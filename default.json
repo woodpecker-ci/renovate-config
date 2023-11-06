@@ -9,6 +9,7 @@
   "prConcurrentLimit": 5,
   "automergeType": "branch",
   "automergeMajor": false,
+  "automerge": true,
   "customManagers": [
     {
       "customType": "regex",
