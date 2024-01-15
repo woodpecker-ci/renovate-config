@@ -10,6 +10,9 @@
   "automergeType": "branch",
   "automergeMajor": false,
   "automerge": true,
+  "lockFileMaintenance": {
+    "groupName": "& golang deps non-major"
+  },
   "customManagers": [
     {
       "customType": "regex",
@@ -30,7 +33,7 @@
       "labels": ["build"]
     },
     {
-      "groupName": "golang deps non-major",
+      "groupName": "& golang deps non-major",
       "matchManagers": ["gomod"],
       "matchUpdateTypes": ["minor", "patch"],
       "extends": ["schedule:daily"]
