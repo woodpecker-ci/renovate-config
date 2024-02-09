@@ -36,8 +36,5 @@
       "extends": ["schedule:daily"]
     }
   ],
-  "postUpdateOptions": [
-    "gomodTidy",
-    "gomodUpdateImportPaths" 
-  ]
+  "postUpdateOptions": ["gomodTidy", "gomodUpdateImportPaths"]
 }
