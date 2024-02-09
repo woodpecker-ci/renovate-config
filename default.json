@@ -23,7 +23,7 @@
   "labels": ["dependencies"],
   "packageRules": [
     {
-      "matchManagers": ["gomod", "npm", "dockerfile"],
+      "matchManagers": ["gomod", "npm", "dockerfile"]
     },
     {
       "matchManagers": ["woodpecker"],
