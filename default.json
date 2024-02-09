@@ -35,5 +35,9 @@
       "matchUpdateTypes": ["minor", "patch"],
       "extends": ["schedule:daily"]
     }
+  ],
+  "postUpdateOptions": [
+    "gomodTidy",
+    "gomodUpdateImportPaths" 
   ]
 }
