@@ -20,14 +20,14 @@
       "versioningTemplate": "{{#if versioning}}{{{versioning}}}{{else}}semver{{/if}}"
     }
   ],
+  "labels": ["dependencies"],
   "packageRules": [
     {
-      "matchManagers": ["gomod", "npm", "dockerfile"],
-      "labels": ["dependencies"]
+      "matchManagers": ["gomod", "npm", "dockerfile"]
     },
     {
       "matchManagers": ["woodpecker"],
-      "labels": ["build"]
+      "addLabels": ["build"]
     },
     {
       "groupName": "golang deps non-major",
