@@ -38,6 +38,12 @@
       "matchManagers": ["gomod"],
       "matchUpdateTypes": ["minor", "patch"],
       "extends": ["schedule:daily"]
+    },
+    {
+      "groupName": "pre-commit non-major",
+      "matchManagers": ["pre-commit"],
+      "matchUpdateTypes": ["minor", "patch"],
+      "addLabels": ["build"]
     }
   ],
   "postUpdateOptions": ["gomodTidy", "gomodUpdateImportPaths"]
