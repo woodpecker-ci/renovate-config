@@ -41,7 +41,8 @@
     {
       "groupName": "pre-commit non-major",
       "matchManagers": ["pre-commit"],
-      "matchUpdateTypes": ["minor", "patch"]
+      "matchUpdateTypes": ["minor", "patch"],
+      "addLabels": ["build"]
     }
   ],
   "postUpdateOptions": ["gomodTidy", "gomodUpdateImportPaths"]
