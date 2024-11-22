@@ -8,7 +8,7 @@
     "schedule:weekends"
   ],
   "prConcurrentLimit": 5,
-  "automergeType": "branch",
+  "automergeType": "pr",
   "automergeMajor": false,
   "automerge": true,
   "customManagers": [
