@@ -25,7 +25,7 @@
     },
     {
       "customType": "regex",
-      "fileMatch": ["^Makefile$"],
+      "fileMatch": ["^Makefile$", "^.gitpod.yml$"],
       "matchStrings": [
         "# renovate: datasource=(?<datasource>\\S+) depName=(?<depName>\\S+)( registryUrl=(?<registryUrl>.*?))?( versioning=(?<versioning>.*?))?\\n.*?_VERSION (:|\\?)= (?<currentValue>.*)\\s"
       ]
