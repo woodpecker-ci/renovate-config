@@ -53,5 +53,8 @@
       "addLabels": ["build"]
     }
   ],
-  "postUpdateOptions": ["gomodTidy", "gomodUpdateImportPaths"]
+  "postUpdateOptions": ["gomodTidy", "gomodUpdateImportPaths"],
+  "vulnerabilityAlerts": {
+    "labels": ["security"]
+  }
 }
