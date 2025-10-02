@@ -58,6 +58,15 @@
       "matchManagers": ["pre-commit"],
       "matchUpdateTypes": ["minor", "patch"],
       "addLabels": ["build"]
+    },
+    {
+      "matchManagers": ["custom.regex"],
+      "matchFileNames": ["/^(group_vars|host_vars)/.+?$/"],
+      "automerge": false
+    },
+    {
+      "matchManagers": ["ansible"],
+      "automerge": false
     }
   ],
   "postUpdateOptions": ["gomodTidy", "gomodUpdateImportPaths"],
