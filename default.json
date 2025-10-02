@@ -58,6 +58,15 @@
       "matchManagers": ["pre-commit"],
       "matchUpdateTypes": ["minor", "patch"],
       "addLabels": ["build"]
+    },
+    {
+      "matchManagers": ["custom.regex", "ansible"],
+      "matchFileNames": ["/^(roles/group_vars|host_vars)/.+?$/"],
+      "automerge": false,
+      "prBodyNotes": [
+        ":warning: **Manual Steps required**",
+        "Remember to always deploy the updated dependencies after merging the PR by running `./ansible.sh`."
+      ]
     }
   ],
   "postUpdateOptions": ["gomodTidy", "gomodUpdateImportPaths"],
