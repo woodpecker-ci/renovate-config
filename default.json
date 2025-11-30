@@ -14,6 +14,13 @@
   "customManagers": [
     {
       "customType": "regex",
+      "fileMatch": ["^.woodpecker/.+?$"],
+      "matchStrings": [
+        "# renovate: datasource=(?<datasource>\\S+) depName=(?<depName>\\S+)( registryUrl=(?<registryUrl>.*?))?( versioning=(?<versioning>.*?))?\\s+.*?_VERSION:\\s*(?<currentValue>.+)\\s"
+      ]
+    },
+    {
+      "customType": "regex",
       "fileMatch": ["^(group_vars|host_vars)/.+?$"],
       "matchStrings": [
         "# renovate: datasource=(?<datasource>\\S+) depName=(?<depName>\\S+)( versioning=(?<versioning>.*?))?\\n(?<roleName>\\S+?)_version:\\s+\"?'?(?<currentValue>[^\"'@\\s]+)(?:@(?<currentDigest>sha256:[a-f0-9]+))?\"?'?"
